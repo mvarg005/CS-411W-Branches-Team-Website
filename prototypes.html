@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Prototypes</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Branches</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="411-deliverables.html">411 Deliverables</a></li>
+            <li class="nav-item"><a class="nav-link" href="410-deliverables.html">410 Deliverables</a></li>
+            <li class="nav-item"><a class="nav-link" href="presentations.html">Presentations</a></li>
+            <li class="nav-item"><a class="nav-link" href="prototypes.html">Prototypes</a></li>
+            <li class="nav-item"><a class="nav-link" href="labs.html">Labs</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li> <!-- Separate Team Link -->
+            <li class="nav-item"><a class="nav-link" href="glossary.html">Glossary</a></li> <!-- Separate Glossary Link -->
+            <li class="nav-item"><a class="nav-link" href="references.html">References</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Prototype Section -->
+  <div class="container mt-5">
+    <h1>Prototype Overview</h1>
+
+    <!-- Prototype Presentation Section -->
+    <section id="prototype-presentation" class="my-4">
+      <h2>Prototype Presentation</h2>
+      <p>Here we include the slides for the prototype presentation.</p>
+      <!-- Google Slides Embed for Prototype Presentation -->
+      <iframe src="https://docs.google.com/presentation/d/1QOtcv4o4DA3R9m3CY9OCx7vQqrOD3_VQ0cf0rGUxN2Y/edit#slide=id.g3139c523e64_0_12" frameborder="0" width="100%" height="500px"></iframe>
+    </section>
+
+    <!-- Major Functional Components Prototype Diagram Section -->
+    <section id="functional-components" class="my-4">
+      <h2>Major Functional Components Prototype Diagram</h2>
+      <p>This section includes a diagram that outlines the major functional components of the prototype.</p>
+      <!-- Prototype Diagram Image (Replace with your actual image URL) -->
+      <img src="path-to-your-diagram.png" alt="Functional Components Diagram" class="img-fluid">
+    </section>
+
+    <!-- Real World Product vs Prototype Section -->
+    <section id="product-vs-prototype" class="my-4">
+      <h2>Real World Product vs Prototype</h2>
+      <p>Here we compare the real-world product with the prototype, highlighting the differences.</p>
+      <ul>
+        <li><strong>Real World Product:</strong> Description of the real-world product.</li>
+        <li><strong>Prototype:</strong> Description of the prototype.</li>
+      </ul>
+    </section>
+
+    <!-- Prototype Risk Assessment Section -->
+    <section id="risk-assessment" class="my-4">
+      <h2>Prototype Risk Assessment</h2>
+      <p>We assess the risks associated with the prototype in this section.</p>
+      <ul>
+        <li>Risk 1: Description of the first risk.</li>
+        <li>Risk 2: Description of the second risk.</li>
+        <li>Risk 3: Description of the third risk.</li>
+      </ul>
+    </section>
+
+    <!-- Prototype User Stories Section -->
+    <section id="user-stories" class="my-4">
+      <h2>Prototype User Stories</h2>
+      <p>This section outlines user stories for the prototype.</p>
+      <ul>
+        <li><strong>User Story 1:</strong> Description of the first user story.</li>
+        <li><strong>User Story 2:</strong> Description of the second user story.</li>
+        <li><strong>User Story 3:</strong> Description of the third user story.</li>
+      </ul>
+    </section>
+
+    <!-- Prototype Sprints Section -->
+    <section id="sprints" class="my-4">
+      <h2>Prototype Sprints</h2>
+      <p>Here we outline the sprints involved in the prototype development process.</p>
+      <ul>
+        <li><strong>Sprint 1:</strong> Description of sprint 1.</li>
+        <li><strong>Sprint 2:</strong> Description of sprint 2.</li>
+        <li><strong>Sprint 3:</strong> Description of sprint 3.</li>
+      </ul>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript for highlighting active navbar link -->
+  <script>
+    // Get all links in the navbar
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Loop through each link
+    navLinks.forEach(link => {
+      // Check if the current page URL matches the href of the link
+      if (window.location.href.includes(link.href)) {
+        link.classList.add('active'); // Add 'active' class to the link
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>About Us</title>
+  <style>
+    /* Custom styles for the page */
+    body {
+      background-color: #f4f4f9;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .container {
+      max-width: 1200px;
+      margin-top: 50px;
+    }
+    .card {
+      transition: transform 0.3s ease-in-out;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .lead {
+      font-size: 1.25rem;
+      color: #333;
+    }
+    h1, h2 {
+      color: #343a40;
+    }
+    #team .card-body {
+      background-color: #ffffff;
+      padding: 20px;
+    }
+    #team img {
+      border-radius: 50%;
+      border: 3px solid #ddd;
+      max-height: 200px;
+      object-fit: cover;
+      margin-bottom: 10px;  /* Added margin for space between image and name */
+      display: block;  /* Ensures the image is a block element, preventing misalignment */
+      margin-left: auto;
+      margin-right: auto;  /* Centers the image horizontally */
+    }
+    #project-goals ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    #project-goals li {
+      background-color: #e9ecef;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Project Website</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="411-deliverables.html">411 Deliverables</a></li>
+            <li class="nav-item"><a class="nav-link" href="410-deliverables.html">410 Deliverables</a></li>
+            <li class="nav-item"><a class="nav-link" href="presentations.html">Presentations</a></li>
+            <li class="nav-item"><a class="nav-link" href="prototypes.html">Prototypes</a></li>
+            <li class="nav-item"><a class="nav-link" href="labs.html">Labs</a></li>
+            <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+            <li class="nav-item"><a class="nav-link" href="glossary.html">Glossary</a></li>
+            <li class="nav-item"><a class="nav-link" href="references.html">References</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <div class="container text-center">
+    <h1>CS 411 Team</h1>
+    <p class="lead">We are a dedicated team working towards developing a cutting-edge solution to solve real-world problems.</p>
+
+    <!-- Team Section -->
+    <section id="team" class="my-4">
+      <h2>Our Team</h2>
+      <p>Meet the talented individuals behind this project:</p>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="https://i.ytimg.com/vi/r0Bm6zIUZag/maxresdefault.jpg" class="card-img-top" alt="Team Member 1">
+            <div class="card-body">
+              <h5 class="card-title">Kyrie</h5>
+              <p class="card-text">Software Developer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="https://s3.amazonaws.com/msoe/files/callouts/wide_xlrg_computer-science-landing-page.jpg" class="card-img-top" alt="Team Member 2">
+            <div class="card-body">
+              <h5 class="card-title">Holadem</h5>
+              <p class="card-text">Software Developer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="https://ih1.redbubble.net/image.4233592904.7884/flat,750x,075,f-pad,750x1000,f8f8f8.jpg" class="card-img-top" alt="Team Member 3">
+            <div class="card-body">
+              <h5 class="card-title">Christian</h5>
+              <p class="card-text">Software Developer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYEbhR8ciXY35r68Jh1daKpf70jXQ0Tzb8EA&s" class="card-img-top" alt="Team Member 4">
+            <div class="card-body">
+              <h5 class="card-title">Marcelo</h5>
+              <p class="card-text">Software Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Goals Section -->
+    <section id="project-goals" class="my-4">
+      <h2>Project Goals</h2>
+      <p>Our primary objectives include:</p>
+      <ul>
+        <li>Ensuring user privacy and security with customizable content visibility and strict access controls.</li>
+        <li>Providing a user-friendly platform for families to securely share moments, with privacy options for each post.</li>
+        <li>Building a scalable platform that grows with user needs while maintaining a high level of security and performance.</li>
+        <li>Offering features that build trust within the community, such as an authenticity rating system and temporary post functionality.</li>
+        <li>Delivering an intuitive and visually appealing user experience on both mobile and desktop platforms.</li>
+        <li>Encouraging a sense of community and connection while maintaining the highest standards of privacy and content authenticity.</li>
+      </ul>
+    </section>
+    
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript for highlighting active navbar link -->
+  <script>
+    // Get all links in the navbar
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Loop through each link
+    navLinks.forEach(link => {
+      // Check if the current page URL matches the href of the link
+      if (window.location.href.includes(link.href)) {
+        link.classList.add('active'); // Add 'active' class to the link
+      }
+    });
+  </script>
+</body>
+
+</html>

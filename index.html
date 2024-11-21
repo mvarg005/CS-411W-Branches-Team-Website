@@ -1,56 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team ? | Branches</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Branches Project</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .hero-section {
+      background-image: url('https://via.placeholder.com/1500x600'); /* Replace with your own hero image */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .hero-section h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+    .hero-section p {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .card-body {
+      padding: 30px;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+    .navbar-nav .nav-link {
+      font-size: 1.1rem;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: auto;
+    }
+  </style>
 </head>
+
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Branches</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="411-deliverables.html">411 Deliverables</a></li>
+          <li class="nav-item"><a class="nav-link" href="410-deliverables.html">410 Deliverables</a></li>
+          <li class="nav-item"><a class="nav-link" href="presentations.html">Presentations</a></li>
+          <li class="nav-item"><a class="nav-link" href="prototypes.html">Prototypes</a></li>
+          <li class="nav-item"><a class="nav-link" href="labs.html">Labs</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="glossary.html">Glossary</a></li>
+          <li class="nav-item"><a class="nav-link" href="references.html">References</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Include the navbar -->
-    <!-- Copy and paste the contents of navbar.html here -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Team ?</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="deliverables.html">411 Deliverables</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Presentations</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Prototype</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Labs</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Glossary</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">References</a></li>
-            </ul>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1>Welcome to Branches</h1>
+      <p>Your secure, family-oriented social platform for sharing and connecting.</p>
+    </div>
+  </section>
+
+  <!-- Page Content -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">What We Do</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Secure Sharing</h5>
+            <p class="card-text">We provide a secure platform for families to share memories without compromising privacy.</p>
+          </div>
         </div>
-    </nav>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-success">User-Friendly Interface</h5>
+            <p class="card-text">Our platform is designed to be simple and intuitive for all ages, making family connections easy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-info">Custom Privacy Controls</h5>
+            <p class="card-text">Families can customize who sees their posts, ensuring content stays within trusted circles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <header class="text-center my-5">
-        <h1>Team ?</h1>
-        <h2>BRANCHES</h2>
-        <p>Family Social Media</p>
-        <p>Safe Place to share</p>
-    </header>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Branches Project | <a href="https://www.example.com" class="text-info">Learn More</a></p>
+  </footer>
 
-    <section class="container text-center my-5">
-        <h3>What is the Problem?</h3>
-        <h4>problem header</h4>
-        <p>problem desc. here</p>
-    </section>
+  <!-- JavaScript to highlight active link -->
+  <script>
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
-    <section class="container text-center my-5">
-        <h3>Our Solution</h3>
-        <p>solution desc</p>
-    </section>
+    navLinks.forEach(link => {
+      if (window.location.href.includes(link.href)) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
