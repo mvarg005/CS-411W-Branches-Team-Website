@@ -5,17 +5,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <title>About</title>
+  <title>About - Branches Project</title> 
   <style>
-    .card-title {
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #d0e7f9; /* Light blue background */
+      color: #333; /* Neutral text color */
+    }
+
+    .hero-section {
+      background-image: url('https://via.placeholder.com/1500x600'); /* Replace with your own hero image */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .hero-section h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+
+    .hero-section p {
       font-size: 1.5rem;
+      font-weight: 300;
     }
-    .card img {
-      height: 200px;
-      object-fit: cover;
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
-    footer p {
-      margin: 0;
+
+    .card-body {
+      padding: 30px;
+      background-color: #ffffff; /* Light card background */
+      color: #333; /* Neutral text color */
+    }
+
+    .card-title {
+      color: #0056b3; /* Consistent primary color */
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      font-size: 1.1rem;
+      color: #d0e7f9; /* Match background */
+    }
+
+    .navbar-dark .navbar-nav .nav-link.active {
+      color: white; /* Highlight active link */
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #ffffff; /* White on hover for visibility */
+    }
+
+    footer {
+      background-color: #0056b3; /* Dark blue footer background */
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #d0e7f9; /* Light blue for footer links */
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -37,6 +105,7 @@
           <li class="nav-item"><a class="nav-link" href="presentations.html">Presentations</a></li>
           <li class="nav-item"><a class="nav-link" href="prototypes.html">Prototypes</a></li>
           <li class="nav-item"><a class="nav-link" href="labs.html">Labs</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
           <li class="nav-item"><a class="nav-link" href="glossary.html">Glossary</a></li>
           <li class="nav-item"><a class="nav-link" href="references.html">References</a></li>
         </ul>
@@ -44,77 +113,42 @@
     </div>
   </nav>
 
-  <!-- About Section -->
-  <div class="container mt-5">
-    <div class="row">
-      <!-- Heading Section -->
-      <div class="col-12 text-center mb-4">
-        <h1>About</h1>
-        <p class="lead">We are a dedicated team working towards solving real-world problems with innovative software solutions.</p>
-      </div>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="display-4 font-weight-bold">About Branches</h1>
+      <p class="lead">Your secure, family-oriented social platform for sharing and connecting.</p>
     </div>
+  </section>
 
-    <!-- Problem Goals -->
-    <div class="d-flex justify-content-center my-4">
-      <div class="card shadow-sm" style="width: 100%; max-width: 600px;">
-        <div class="card-body text-center">
-          <h5 class="card-title text-primary" style="font-size: 2.5rem;">Project Goals</h5> 
-          <img src="https://www.shutterstock.com/image-vector/smart-businessman-presents-scope-work-600nw-2456621655.jpg" 
-               alt="Project Goals" class="img-fluid rounded mb-3" style="max-height: 200px;">
-          <p class="card-text">Our primary objectives include:</p>
-          <ul class="text-start">
-            <li>Developing an innovative solution to address privacy concerns in family sharing platforms.</li>
-            <li>Ensuring scalability and adaptability for families of different sizes and locations.</li>
-            <li>Creating a user-friendly interface that simplifies the process of sharing content securely.</li>
-            <li>Meeting project timelines while maintaining the highest standards of security and privacy.</li>
-          </ul>
-        </div>
-      </div>
-    </div><div class="row g-4">
-
-      
-      <!-- Problem Statement -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <img src="https://hookagency.com/wp-content/uploads/2024/08/How-To-Write-A-Problem-Statement-8-Effective-Tips.png" 
-               alt="Problem Statement" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Problem Statement</h5>
-            <p class="card-text">Families struggle to securely share important updates online due to inadequate privacy settings on traditional platforms.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Problem Solution -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <img src="https://az.design/wp-content/uploads/2022/05/graphic-design-problem-solving-1080x675.png" 
-               alt="Problem Solution" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title text-success">Problem Solution</h5>
-            <p class="card-text">Create a secure platform for families to share memories with advanced privacy controls and customizable settings.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Software Solution -->
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-          <img src="https://media.istockphoto.com/id/1026102910/vector/vector-illustration-concept-of-website-and-app-design-and-development.jpg?s=612x612&w=0&k=20&c=vDAXK53sUCo694kNDT0kcCeQ-YFAhFurPuEvSLCxZaA=" 
-               alt="Software Solution" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title text-info">Software Solution: Branches</h5>
-            <p class="card-text">Branches is a family-focused social media platform offering secure sharing, temporary posts, and private connections.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- Main Content -->
+  <div class="container mt-5 mission-section" id="mission">
+    <h2 class="text-center mb-4">Our Mission</h2>
+    <p>
+      At Branches, we strive to create a secure, intuitive, and trustworthy platform for families to share their memories,
+      experiences, and moments. Our goal is to provide a safe space where families can connect and share special moments
+      without compromising their privacy or security.
+    </p>
+    <p>
+      We prioritize simplicity, user experience, and privacy with customizable sharing options, ensuring that your posts
+      remain visible only to trusted individuals.
+    </p>
   </div>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3 mt-5">
-    <p>&copy; 2024 Branches Project | <a href="https://www.example.com" class="text-info">Learn More</a></p>
+  <footer>
+    <p>&copy; 2024 Branches Project | <a href="https://www.example.com" class="text-info text-decoration-none">Learn More</a></p>
   </footer>
+
+  <!-- JavaScript to highlight active link -->
+  <script>
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    navLinks.forEach(link => {
+      if (window.location.href.includes(link.href)) {
+        link.classList.add('active');
+      }
+    });
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

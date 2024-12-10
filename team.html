@@ -7,54 +7,90 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <title>About Us</title>
   <style>
-    /* Custom styles for the page */
     body {
-      background-color: #f4f4f9;
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #d0e7f9; /* Light blue background */
+      color: #333; /* Neutral text color */
     }
-    .navbar {
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    .hero-section {
+      background-image: url('https://via.placeholder.com/1500x600'); /* Replace with your own hero image */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+      background-color: #FFB6C1; /* Light coral as a complementary color */
     }
-    .container {
-      max-width: 1200px;
-      margin-top: 50px;
+  
+    .hero-section h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
     }
+  
+    .hero-section p {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+  
     .card {
-      transition: transform 0.3s ease-in-out;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
-    .card:hover {
-      transform: scale(1.05);
+  
+    .card-body {
+      padding: 30px;
+      background-color: #ffffff; /* Light card background */
+      color: #333; /* Neutral text color */
     }
-    .lead {
-      font-size: 1.25rem;
-      color: #333;
+  
+    .card-title {
+      color: #0056b3; /* Consistent primary color */
     }
-    h1, h2 {
-      color: #343a40;
+  
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.8rem;
     }
-    #team .card-body {
-      background-color: #ffffff;
-      padding: 20px;
+  
+    .navbar-dark .navbar-nav .nav-link {
+      font-size: 1.1rem;
+      color: #d0e7f9; /* Match background */
     }
-    #team img {
-      border-radius: 50%;
-      border: 3px solid #ddd;
-      max-height: 200px;
-      object-fit: cover;
-      margin-bottom: 10px;  /* Added margin for space between image and name */
-      display: block;  /* Ensures the image is a block element, preventing misalignment */
-      margin-left: auto;
-      margin-right: auto;  /* Centers the image horizontally */
+  
+    .navbar-dark .navbar-nav .nav-link.active {
+      color: white; /* Highlight active link */
     }
+  
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #ffffff; /* White on hover for visibility */
+    }
+  
+    footer {
+      background-color: #0056b3; /* Dark blue footer background */
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto;
+    }
+  
+    footer a {
+      color: #d0e7f9; /* Light blue for footer links */
+      text-decoration: none;
+    }
+  
+    footer a:hover {
+      text-decoration: underline;
+    }
+  
+    /* Custom styling for undented list */
     #project-goals ul {
-      list-style-type: none;
       padding-left: 0;
-    }
-    #project-goals li {
-      background-color: #e9ecef;
-      margin: 8px 0;
-      padding: 10px;
-      border-radius: 5px;
+      margin-left: 0;
     }
   </style>
 </head>
@@ -63,7 +99,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Project Website</a>
+      <a class="navbar-brand" href="index.html">Branches</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -84,15 +120,20 @@
     </div>
   </nav>
 
+  <!-- Hero Section -->
+  <div class="hero-section" style="background-color: #3498db; padding: 100px 0; text-align: center;">
+    <h1 style="color: #ffffff;">About Us</h1> <!-- White color for the heading -->
+    <p style="color: #f0f0f0;">Learn more about our team and the goals of our project</p> <!-- Light grey for the paragraph -->
+</div>
+
+
   <!-- About Section -->
   <div class="container text-center">
-    <h1>CS 411 Team</h1>
-    <p class="lead">We are a dedicated team working towards developing a cutting-edge solution to solve real-world problems.</p>
+    
 
     <!-- Team Section -->
     <section id="team" class="my-4">
-      <h2>Our Team</h2>
-      <p>Meet the talented individuals behind this project:</p>
+     
       <div class="row">
         <div class="col-md-3">
           <div class="card">
@@ -146,7 +187,6 @@
         <li>Encouraging a sense of community and connection while maintaining the highest standards of privacy and content authenticity.</li>
       </ul>
     </section>
-    
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
